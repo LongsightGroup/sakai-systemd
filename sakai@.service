@@ -22,7 +22,7 @@ ExecStart=/usr/bin/jsvc \
             -Djava.io.tmpdir=${CATALINA_TEMP} \
             -cp /usr/share/java/commons-daemon.jar:${CATALINA_HOME}/bin/bootstrap.jar:${CATALINA_HOME}/bin/tomcat-juli.jar \
             -user ${USER} \
-            -java-home ${TOMCAT_JAVA_HOME} \
+            -java-home ${JAVA_HOME} \
             -pidfile ${CATALINA_PID} \
             -errfile SYSLOG \
             -outfile SYSLOG \
